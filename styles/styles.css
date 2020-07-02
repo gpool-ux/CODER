@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    z-index: 1000;
+}
+
+header ul li a {
+    position: relative;
+    padding: 5px 10px;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mosaico {
+    padding-top: 20px;
+}
+
+header ul li a.active,
+header ul li a:hover {
+    background: #070f39;
+}
+
+.toggler {
+    display: none;
+}
+
+#header .logo img {
+    margin: auto;
+    display: block;
+    width: 350px;
+    background: #fff;
+}
+
+.options {
+    display: none;
+    height: 400px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    background: #070f39;
+}
+.menu a {
+    width: 100%;
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 2px solid #fff;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
+}
+
+.menu a:hover {
+    background: #df4ba1;
+    text-decoration: none;
+    border: 2px solid black;
+}
+.section1 {
+    background: #fff;
+    border-radius: 35px;
+}
+
+.subtitulos1 h1 {
+    color: #070f39;
+    display: block;
+    white-space: nowrap;
+    text-align: center;
+    margin: 30px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.subtitulos2 h1 {
+    color: #070f39;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.about {
+    background: #fff;
+    border-radius: 100px;
+}
+.about,
+.services {
+    width: 100%;
+    display: block;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about-c1 h1,
+.about-c1 p {
+    color: #070f39;
+    font-size: 1.5em;
+    margin: 20px;
+    text-align: justify;
+    font-family: "Orbitron", sans-serif;
+}
+
+.about-c1 {
+    border-right: 4px solid #070f39;
+}
+
+.about-c1,
+.about-c2 {
+    width: 99%;
+}
+
+.about-c2 img {
+    display: block;
+    margin: auto;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.about-c2 h2 {
+    color: #070f39;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.section2 .services-c1,
+.section2 .services-c2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.section2 .services-c1 ul li,
+.section2 .services-c2 ul li {
+    font-family: "Orbitron", sans-serif;
+    margin: 20px;
+    list-style-image: url("../img/li-list/vineta.jpg");
+    list-style-position: outside;
+}
+
+.services .list-service {
+    color: #070f39;
+    margin: 20px;
+    font-size: 20px;
+}
+
+#servicios {
+    border-top-left-radius: 400px;
+    background: #541742;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #541742; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border: 2px solid #fff;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*CELULAR MOVIL*/
+@media (max-width: 991px) {
+    header ul {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 50px 30px;
+        overflow: auto;
+        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
+        background: #541742;
+        flex-direction: column;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(-100%);
+        text-decoration: none;
+    }
+    header.active ul {
+        top: 80px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    header ul li a {
+        margin: 5px 0;
+        font-size: 24px;
+        text-decoration: none;
+        border: 2px solid white;
+    }
+
+    header ul li a:hover {
+        background: #070f39;
+    }
+    .toggler {
+        border: 2px solid black;
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: #070f39;
+        cursor: pointer;
+        margin: auto;
+    }
+    .toggler::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.5s;
+    }
+
+    .toggler::after {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        z-index: 1;
+
+        transition: 0.5s;
+    }
+    header.active .toggler::before {
+        top: 10px;
+        transform: rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    header.active .toggler::after {
+        bottom: 14px;
+        transform: rotate(-45deg);
+    }
+    .options {
+        display: flex;
+    }
+    .menu {
+        display: none;
+    }
+
+    #header .logo img {
+        max-width: 100%;
+        background: #fff;
+        padding-top: 20px;
+    }
+    .about-c1 {
+        border-right: none;
+    }
+
+    .about,
+    .services {
+        width: 100%;
+        display: block;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-c2 img {
+        display: block;
+        margin: auto;
+        max-width: 500px;
+        object-fit: cover;
+    }
+}
+
+/*IPAD*/
+@media (max-width: 768px) {
+    #header2 {
+        display: none;
+    }
+
+    .about-c1 {
+        border-right: none;
+    }
+    .about,
+    .services {
+        width: 100%;
+        display: block;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-c2 img {
+        display: block;
+        margin: auto;
+        max-width: 300px;
+        object-fit: cover;
+    }
+}
+
+/*CELULAR SMALL*/
+@media (max-width: 320px) {
+    .about-c1 {
+        border-right: none;
+    }
+    .about,
+    .services {
+        width: 100%;
+        display: block;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-c2 img {
+        display: block;
+        margin: auto;
+        max-width: 300px;
+        object-fit: cover;
+    }
+
+    ul {
+        display: block;
+        /*  margin-left: 25px; */
+        list-style-image: url("../img/li-list/vineta.jpg");
+        list-style-position: outside;
+    }
+}
