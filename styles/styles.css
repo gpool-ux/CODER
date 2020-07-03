@@ -277,7 +277,7 @@ header ul li a:hover {
     }
     .options {
         display: flex;
-        height: 450px;
+        height: 400px;
     }
     .menu {
         display: none;
