@@ -15,7 +15,7 @@ header {
     /* height: 80px; */
     padding: 0 100px;
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
     background: #fff;
     z-index: 1000;
@@ -29,7 +29,6 @@ header ul li a {
     text-decoration: none;
     cursor: pointer;
 }
-
 
 header ul li a.active,
 header ul li a:hover {
@@ -46,7 +45,6 @@ header ul li a:hover {
     width: 350px;
     background: #fff;
 }
-
 
 #mosaico {
     padding-top: 20px;
@@ -105,6 +103,9 @@ header ul li a:hover {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  
+    
+
 }
 
 .about-c1 h1,
@@ -147,22 +148,29 @@ header ul li a:hover {
     align-items: center;
     align-content: center;
 }
+
 .section2 .services-c1 ul li,
 .section2 .services-c2 ul li {
     font-family: "Orbitron", sans-serif;
     margin: 20px;
-    list-style-image: url("../img/li-list/vineta.jpg");
+    list-style-image: url("../img/li-list/planeta-1.png");
     list-style-position: outside;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 #servicios {
     border-top-left-radius: 400px;
     background: #541742;
 }
+
 .services .list-service {
     color: #fff;
-    margin: 20px;
+    padding-bottom: 40px;
     font-size: 20px;
+    flex-direction: column;
+    text-align: left;
 }
 
 .subtitulos2 h1 {
@@ -332,9 +340,9 @@ header ul li a:hover {
         object-fit: cover;
     }
 }
-
+/* 
 /*CELULAR SMALL*/
-@media (max-width: 320px) {
+/* @media (max-width: 320px) {
     .about-c1 {
         border-right: none;
     }
@@ -357,7 +365,8 @@ header ul li a:hover {
     ul {
         display: block;
         /*  margin-left: 25px; */
-        list-style-image: url("../img/li-list/vineta.jpg");
+        list-style-image: url("../img/li-list/planeta-1.png");
         list-style-position: outside;
     }
-}
+} */
+ 

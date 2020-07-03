@@ -3,17 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/cuadricula.css"> 
      <link rel="shortcut icon" type="image/x-icon" sizes="16x16 32x32 48x48 64x64" href="./img/favicon.png">
     <title>Coder - Welcome</title>
   </head>
   <body>
+      
+<!--WIDGET -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "1629986620602076", // Facebook page ID
+            whatsapp: "992426783", // WhatsApp number
+            snapchat:"992426783",
+            call: "992426783", // Call phone number
+            sms: "992426783",
+            call_to_action: "", // Call to action
+            button_color: "#541742", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp,snapchat,call,sms", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!--WIDGET -->
     <button onclick="topFunction()" id="myBtn" title="Ir arriba">/\</button>
     <header id="header">
         <div class="logo">
-            <a href="index.html"> <img src="./img/LOGO.png" alt="" /></a>
+            <img src="./img/LOGO.png" alt="" />
             </div>
           <ul class="options">
             <li><a href="index.html#mosaico" class="active" onclick="toggler()">INICIO</a></li>
@@ -21,13 +42,9 @@
             <li><a href="index.html#servicios" onclick="toggler()">SERVICIOS</a></li>
             <li><a href="index.html#portafolio" onclick="toggler()">PORTAFOLIO</a></li>
             <li><a href="index.html#contacto" onclick="toggler()">CONTACTO</a></li>
-
           </ul>
           <div class="toggler" onclick="toggler()"></div>
         </header>
-   
-    
-   
 <!-- CUADRICULA INICIO --> 
 <div id="mosaico" class="container-fluid">
 
@@ -146,10 +163,7 @@
     <img id="TTL740982" tLink="1" style="width:100%" src="./img/slider/D2_maxup_la.jpg" alt="Ecos-En-La-Oscuridad" >
     <img id="TTL617439" tLink="1" style="width:100%" src="./img/slider/D2_maxprime_la.jpg" alt="Lujuria-En-El-Convento" >
     </div>
-    
-
                 </div>
-     
         </div>
     </div>
 </div>
@@ -161,8 +175,6 @@
             <a href="index.html#portafolio">PORTAFOLIO</a>
             <a href="index.html#contacto">CONTACTO</a>
         </div> 
-        
-  
       <section id="nosotros" class="section1">
             <div class="subtitulos1">
                 <h1>Sobre Nosotros</h1>
@@ -198,7 +210,6 @@
           </div>
         </div>
       </section>
-  
      
       <section id="servicios" class="section2">
         <div class="subtitulos2">
@@ -209,7 +220,7 @@
                 <!--COLUMNA 1-->
            
             <ul class="list-service">
-                <li> Design Web </li>
+                <li>Design Web </li>
                 <li>Creación logos</li>
                 <li>Branding</li>
                 <li>e-Commerce Web</li>
@@ -217,11 +228,8 @@
                 <li>Marketing Digital</li>
                 <li>Sesión de fotos</li>
                 
-            </ul>
-            
+            </ul>     
           </div>
-
-
           <div class="services-c2">
             <!--COLUMNA 2-->
            
@@ -274,31 +282,8 @@
       </div>
     </div>
   </section>
-
-
  </body>
 
-<!--WIDGET -->
-<script type="text/javascript">
-    (function () {
-        var options = {
-            facebook: "1629986620602076", // Facebook page ID
-            whatsapp: "992426783", // WhatsApp number
-            snapchat:"992426783",
-            call: "992426783", // Call phone number
-            sms: "992426783",
-            call_to_action: "", // Call to action
-            button_color: "#FF318E", // Color of button
-            position: "left", // Position may be 'right' or 'left'
-            order: "facebook,whatsapp,snapchat,call,sms", // Order of buttons
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
-<!--WIDGET -->
 
   <script src="./script/general.min.js"></script>
 <script src="./script/default.min.js"></script>
