@@ -50,7 +50,7 @@ header ul li a:hover {
 
 .options {
     display: none;
-    height: 420px;
+    
 }
 
 .menu {
@@ -277,6 +277,7 @@ header ul li a:hover {
     }
     .options {
         display: flex;
+        height: 480px;
     }
     .menu {
         display: none;
