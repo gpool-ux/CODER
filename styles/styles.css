@@ -12,7 +12,7 @@ body {
 header {
     position: relative;
     width: 100%;
-    height: 80px;
+    /* height: 80px; */
     padding: 0 100px;
     display: flex;
     justify-content: space-between;
@@ -30,9 +30,6 @@ header ul li a {
     cursor: pointer;
 }
 
-#mosaico {
-    padding-top: 20px;
-}
 
 header ul li a.active,
 header ul li a:hover {
@@ -50,9 +47,14 @@ header ul li a:hover {
     background: #fff;
 }
 
+
+#mosaico {
+    padding-top: 20px;
+}
+
 .options {
     display: none;
-    height: 400px;
+    height: 600px;
 }
 
 .menu {
@@ -89,14 +91,6 @@ header ul li a:hover {
     white-space: nowrap;
     text-align: center;
     margin: 30px;
-    font-family: "Orbitron", sans-serif;
-}
-
-.subtitulos2 h1 {
-    color: #070f39;
-    display: block;
-    padding-top: 20px;
-    text-align: center;
     font-family: "Orbitron", sans-serif;
 }
 
@@ -161,15 +155,22 @@ header ul li a:hover {
     list-style-position: outside;
 }
 
+#servicios {
+    border-top-left-radius: 400px;
+    background: #541742;
+}
 .services .list-service {
-    color: #070f39;
+    color: #fff;
     margin: 20px;
     font-size: 20px;
 }
 
-#servicios {
-    border-top-left-radius: 400px;
-    background: #541742;
+.subtitulos2 h1 {
+    color: #fff;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
 }
 
 #myBtn {
@@ -298,6 +299,11 @@ header ul li a:hover {
         margin: auto;
         max-width: 500px;
         object-fit: cover;
+    }
+
+    #servicios {
+        border-top-left-radius: 0;
+        background: #541742;
     }
 }
 
